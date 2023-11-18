@@ -35,7 +35,7 @@ class StarActorsFragmentTest{
             fragmentArgs = bundle,
             factory = fragmentFactory
         )
-
+        Thread.sleep(5000)
         // VERIFY
         onView(withId(R.id.star_actors_text))
             .check(matches(withText(
